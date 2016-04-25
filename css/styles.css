@@ -11,16 +11,21 @@ nav ul {
 	float: right;
 }
 
-
-
-
-
-
-
-
-
-
-
+img {
+	max-width: 100%;
+}
+#featured img {
+	margin: 0 auto;
+	display: block;
+}
+#featured img { 
+	margin: 0 auto;  /*   to display img on the center  */
+	display: block;   /*   to display img on the center  */
+}
+main {
+	max-width: 1000px;
+	margin: 0 auto;
+}
 
 
 
@@ -38,11 +43,30 @@ nav ul {
 	nav li {
 		display: inline-block;
 		line-height: 50px;
-		margin: 0 20px;
+		margin: 0 10px;
 	}
 	nav li a {
 	/*	color: #fff;*/
 		text-decoration: none;
 	}
-
 }
+
+@media all and (min-width: 700px) {
+	#featured img {
+		float: left;   /*  will override margin: 0 auto on line 23 */
+		width: 60%;
+		margin-right: 10px;
+	}	
+	#featured div {
+		width: 35%;
+		float: right;
+	}
+	#featured:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+
+
