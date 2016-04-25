@@ -1,4 +1,3 @@
-
 nav {
 	background-color: pink;
 	max-width: 1000px;
@@ -27,6 +26,10 @@ main {
 	margin: 0 auto;
 }
 
+.latest img {
+	margin: 0 auto;
+	display: block;   /*  for margin: 0 auto to work  */  
+}
 
 
 @media all and (min-width: 480px) {   /*  to display the links once medium is 480px min  */
@@ -49,6 +52,23 @@ main {
 	/*	color: #fff;*/
 		text-decoration: none;
 	}
+}
+
+@media all and (min-width: 500px)  {
+	.latest img {
+		float: left;
+		margin-right: 10px;
+	}
+
+	.latest {
+		margin-bottom: 40px;
+	}
+	.latest:after {
+		content: '';
+		display: block;
+		clear: both;		
+	}
+
 }
 
 @media all and (min-width: 700px) {
