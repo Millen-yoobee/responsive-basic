@@ -3,9 +3,11 @@ nav {
 	max-width: 1000px;
 	margin: 0 auto;
 }
+
 nav ul {   
 	display: none;    /*  to hide the links on mobiles  */
 }
+
 #hamburger {
 	float: right;
 }
@@ -13,14 +15,17 @@ nav ul {
 img {
 	max-width: 100%;
 }
+
 #featured img {
 	margin: 0 auto;
 	display: block;
 }
+
 #featured img { 
 	margin: 0 auto;  /*   to display img on the center  */
 	display: block;   /*   to display img on the center  */
 }
+
 main {
 	max-width: 1000px;
 	margin: 0 auto;
@@ -33,6 +38,7 @@ main {
 
 
 @media all and (min-width: 480px) {   /*  to display the links once medium is 480px min  */
+	
 	nav ul {
 		display: block;
 		text-align: right;
@@ -55,6 +61,7 @@ main {
 }
 
 @media all and (min-width: 500px)  {
+	
 	.latest img {
 		float: left;
 		margin-right: 10px;
@@ -72,6 +79,7 @@ main {
 }
 
 @media all and (min-width: 700px) {
+	
 	#featured img {
 		float: left;   /*  will override margin: 0 auto on line 23 */
 		width: 60%;
@@ -87,6 +95,27 @@ main {
 		clear: both;
 	}
 }
+
+@media all and (min-width: 960px) {
+
+	.latest img {
+		float: none;
+		margin: 0 auto;
+	}
+
+	.latest {
+		/*background-color: yellow;    for debugging purposes  */
+		width: 33%;
+		float: left;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+
+	
+
+}
+
+
 
 
 
